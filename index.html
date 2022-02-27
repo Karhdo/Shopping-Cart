@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="./css/bootstrap-4.0.0/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./fonts/open-iconic-master/font/css/open-iconic-bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h1 class="page-title">Shopping Cart <small></small></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="card">
+                        <div class="card-header bg-info">
+                            <h4 class="card-header__title">List Products</h4>
+                        </div>
+                        <div class="card-body" id="list-product">
+                            <!-- LIST PRODUCTS -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="Card">
+                        <div class="card-header bg-info">
+                            <h4 class="card-header__title">Your Cart</h4>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th width="4%">#</th>
+                                        <th>Name</th>
+                                        <th width="18%">Price</th>
+                                        <th width="4%">Quantity</th>
+                                        <th width="20%">Subtotal</th>
+                                        <th width="32%">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="my-cart-body">
+                                    <!-- CART BODY -->
+                                </tbody>
+                                <tfoot id="my-cart-footer">
+                                    <!-- CART FOOTER -->
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="alert alert-success" role="alert" id="mnotification">Updated <b>successfully</b></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./library/jquery-3.6.0.min.js"></script>
+    <script src="./library/bootstrap-4.0.0/bootstrap.min.js"></script>
+    <script src="./library/system.js"></script>
+
+    <script type="text/javascript">
+        System.defaultJSExtensions = true;
+        System.import("./js/main.js");
+    </script>
+</html>
